@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		  *{margin: 0; padding: 0;}
+		  img{border: none; vertical-align: bottom;}
+		  li{list-style: none;}
+		  body{
+		    height: 2000px;
+		  }
+		  
+		  .parent{
+		    width:550px; height: 550px;
+		    border: 1px solid deeppink;
+		    margin: 30px;
+		    /*定位*/
+		    position: relative;
+		  }
+		  
+		  .box{
+		    width:400px; height: 400px;
+		    border: 1px solid yellowgreen;
+		    margin: 70px;
+		    /*参照*/
+		    position: relative;
+		  }
+		  .box>img{
+		    width:400px;
+		  }
+		  .box .slide{
+		    width:200px; height: 200px;
+		    background: url(img/img/slide_bg.png);
+		    /*定位*/
+		    position: absolute;
+		    left: 0px; top: 0;
+		    /*border:20px solid red*/
+		    display: none;
+		  }
+		  
+		  /*右边*/
+		  .box .big{
+		    width:400px; height: 400px;
+		    border: 1px solid yellowgreen;
+		    position: absolute;
+		    left: 500px; top:0;
+		    overflow: hidden;
+		    display: none;
+		  }
+		  .box .big img{
+		    position: absolute;
+		    left: 0; top: 0;
+		  }
+		</style>
+	</head>
+	<body>
+	  <!--左边-->
+	  <!--<div class="parent">-->
+  	  <div class="box">
+  	    <!--背景图-->
+  	    <img src="img/img/girl.jpg" />
+  	    <!--滑块-->
+  	    <div class="slide"></div>
+  	    
+    	  <!--右边大图-->
+    	  <div class="big">
+    	    <img src="img/img/girl-big.jpg" class="img-big"/>
+    	  </div> 	    
+  	  </div>  
+	  <!--</div>-->
+	  
+	  	  
+	</body>
+</html>
+<script> 
+  var oBox = document.querySelector('.box');
+  var oSlide = document.querySelector('.slide');
+  var oBig = document.querySelector('.big');
+  var oImg = document.querySelector('.img-big');
+  
+  //鼠标移入
+  oBox.onmouseenter = function(){
+    oSlide.style.display = 'block';
+    oBig.style.display = 'block';
+  };
+  //鼠标移出
+  oBox.onmouseleave = function(){
+    oSlide.style.display = 'none';
+    oBig.style.display = 'none';
+  };
+  
+  
+  //鼠标移动到oBox
+  oBox.onmousemove = function(event){
+    var event = event || window.event;   
+    //求标准值  
+    //先求页面滚出去的值
+		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+		console.log(scrollTop);
+    //console.log(scrollTop);
+		var l = event.clientX - getAllLeft(oBox) - oSlide.offsetWidth / 2;
+    var t = event.clientY - getAllTop(oBox) - oSlide.offsetHeight / 2 + scrollTop;
+    //限定范围
+    if(l <= 0){l = 0};
+    if(t <= 0){t = 0};
+    //右边去判断滑块移动的范围
+    if(l >= oBox.clientWidth - oSlide.offsetWidth){l = oBox.clientWidth - oSlide.offsetWidth};
+    if(t >= oBox.clientHeight - oSlide.offsetHeight){t = oBox.clientHeight - oSlide.offsetHeight};
+    document.title = l + ',' + t;
+    
+    //设置让滑块跟随鼠标移动
+    oSlide.style.left = l + 'px';
+    oSlide.style.top = t + 'px';
+    
+    //求比例
+    var bili = (oImg.offsetWidth - oBig.clientWidth) / (oBox.clientWidth - oSlide.offsetWidth);
+    //设置右边大图走
+    oImg.style.left = -l * bili + 'px';
+		oImg.style.top = -t * bili + 'px';
+		console.log(oImg.offsetWidth,oBig.clientWidth,oBox.clientWidth,oSlide.offsetWidth)
+		document.body.scrollTop = 500;
+  };
+
+  
+  //定一个方法，求所有父级的offset偏移值   净位置
+  function getAllLeft(obj){//在这里obj  oBox
+    //先求一下自己的值
+    var allLeft = obj.offsetLeft;
+    //再用死循环去累加一个个的父级
+    while(obj = obj.offsetParent){//条件
+      //累加
+      allLeft += obj.offsetLeft;
+    };
+    return allLeft;
+  };
+  
+  function getAllTop(obj){//在这里obj  oBox
+    //先求一下自己的值
+    var allTop = obj.offsetTop;
+    //再用死循环去累加一个个的父级
+    while(obj = obj.offsetParent){//条件
+      //累加
+      allTop += obj.offsetTop;
+    };
+    return allTop;
+  };
+</script>

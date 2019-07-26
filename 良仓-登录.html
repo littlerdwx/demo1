@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户登录.良仓 - 生活美学指南</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <div class="mainBroad">
+        <div class="login">
+            <form method="POST" action="">
+                <div class="logo">
+                    <img src="./良仓.生活美学平台_files/nlicon.png">
+                </div>
+                <div class="message">
+                    <input type="text" value="" name="phone" placeholder="输入账号" id="phone">
+                    <input type="password" value="" name="pwd" placeholder="输入密码" id="pwd">
+                    <!-- <div class="getCode">获取验证码</div> -->
+                </div>
+                <div class="quick">
+                   <input type="checkbox" name="auto" value="true" id="auto">
+                   <label for="auto">自动登录</label>
+                   <input type="submit" value="登录" name="login" id="login">
+                </div> 
+                <a href="#">更多登录方式 ></a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./js/jquery-1.8.3.min.js"></script>
+<script src="./js/ajax.js"></script>
+<script src = "js/login.js"></script>

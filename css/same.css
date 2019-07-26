@@ -1,0 +1,827 @@
+/* 每个良仓的页头和页尾样式都是相同的*/
+a{
+    text-decoration: none;
+}
+
+li{list-style:none;}
+
+
+div.returnTop{
+    width: 60px;
+    height: 60px;
+    display: none;
+    position: fixed;
+    background: url("../良仓.生活美学平台_files/icon.png") no-repeat -20px -813px;
+    cursor: pointer;
+    bottom: 44px;
+    right: 44px;
+    z-index: 99;
+}
+
+#nav{
+    width: 100%;
+    height: 56px;
+    position: relative;
+    background: #25292E;
+}
+
+
+#content div.headerNaive{
+    width: 100%;
+    position: absolute;
+    top:50px;
+    border-bottom:1px solid transparent;
+}
+
+
+#nav>.nav-wrapper{
+    width: 1000px;
+    margin-left: -500px;
+    left: 50%;
+    position: absolute;
+    height: 100%;;
+}
+
+#nav>.nav-wrapper div.l-logo{
+    float: left;
+    width: 95px;
+    height: 38px;
+    margin: 9px 0;
+}
+
+#nav>.nav-wrapper div.l-logo a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: url("../良仓.生活美学平台_files/icon.png") no-repeat;
+}
+
+#nav>.nav-wrapper .r-list{
+    float: right;
+    list-style: none;
+    height: 100%;
+}
+
+#nav>.nav-wrapper .r-list>li{
+    float: left;
+    padding: 0 15px;
+    line-height: 56px;
+    height: 100%;
+    position: relative;
+}
+
+#nav>.nav-wrapper .r-list li a{
+    font-size: 12px;
+    color: #666666;
+
+}
+
+#nav>.nav-wrapper .r-list li .login,
+#nav>.nav-wrapper .r-list li .reg{
+    color: #CCCCCC;
+}
+
+#nav>.nav-wrapper .r-list li.userCenter:hover ul{
+    display: block;
+}
+#nav>.nav-wrapper .r-list li.userCenter>ul{
+    position: absolute;
+    left:0px;
+    top:50px;
+    z-index:5;
+    background-color: #25292E;
+    display: none;
+}
+#nav>.nav-wrapper .r-list li.userCenter>ul>li{
+    height: 44px;
+    width: 160px;
+    padding:0 15px;
+    font-size:12px;
+    color:#ccc;
+    line-height: 44px;
+    border-bottom: 1px solid #3f4449;
+}
+
+#nav>.nav-wrapper .r-list li.userCenter>ul>li.login-out{
+    height: 50px;
+    text-align: center;
+    color:#fff;
+    border-bottom: none;
+}
+
+#nav>.nav-wrapper .r-list li.userCenter{
+    padding:0 15px;
+    position: relative;
+}
+
+#nav>.nav-wrapper .r-list li.userCenter img{
+    width:30px;
+    height: 30px;
+    position: relative;
+    top:10px;
+    left:0px;
+    margin-right: 9px;
+}
+
+#nav>.nav-wrapper .r-list li.login-li{
+    margin-right: 8px;
+    padding: 0;
+}
+
+#nav>.nav-wrapper .r-list li.reg-li{
+    padding:0 15px 0 0;
+}
+
+#nav>.nav-wrapper .r-list li.left-pad{
+    padding: 0 0 0 15px;
+}
+#nav>.nav-wrapper .r-list li:hover a,
+#footer .wrapper-footer div.about-us a:hover,
+#footer .wrapper-footer div.title div.phone a:hover
+{color: #fff;transition: 0.5s all;} 
+
+#nav>.nav-wrapper .r-list li.line{
+    width: 1px;
+    height: 8px;
+    margin-top: 25px;
+    padding: 0;
+    background:#525961;
+}
+
+#nav>.nav-wrapper .r-list li.subParent .sub-nav1
+{
+    width: 320px;
+    height: 120px;
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    display: none;
+    z-index: 8;
+}
+
+
+
+
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart li :hover{
+    background-color: #2E353D;
+    cursor: pointer;
+}
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart{
+    display: block;
+    width: 320px;
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    z-index: 8;
+    display: none;
+}
+
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart li{
+    background-color: #292F34;
+    list-style:none;
+    height: 65px;
+    width: 290px;
+    padding: 15px 15px;
+    color: #fff;
+    font-size: 12px;   
+}
+
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart li.lookMycart {
+    padding: 0px;
+    width: 320px;
+}
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart li.lookMycart a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #7dbfde;
+    color: #fff;
+    line-height: 65px;
+    text-align: center;
+    font-size: 14px;
+   
+}
+
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart li div.left-cart{
+    float: left;
+    height: 100%;
+}
+
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart li div.left-cart img{
+    height: 100%;
+    width: 65px;
+}
+
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart li div.right-cart{
+    margin-left: 10px;
+    width: 200px;
+    height: 100%;
+    float: left;
+    
+}
+
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart li div.right-cart p.myCartgoodsName{height: 15px;color: #878787;line-height: 15px;} 
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart li div.right-cart p.colorful{height: 35px;line-height: 34px;font-size:12px;    color: #ccc;}
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart li div.right-cart p.price_num{height: 15px;font-size:12px;} 
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart li div.right-cart p.price_num span{
+    float: left;
+    display: block;
+    height: inherit;
+    line-height: 12px;
+    color: #ccc;
+}
+
+#nav>.nav-wrapper .r-list li.subParent  ul.sub_cart li div.right-cart p.price_num span:last-child{
+    float: right;
+}
+
+
+#nav>.nav-wrapper .r-list li.subParent .sub-nav2{
+    position: absolute;
+    top: 56px;
+    left:-66px;
+    width: 190px;
+    height: 270px;
+    background: #292F34;
+    overflow: hidden;
+    display: none;
+    z-index: 8;
+}
+
+#nav>.nav-wrapper .r-list li.subParent .sub-nav2>li{
+    padding: 0 15px;
+    color: #CCCCCC;
+    font-size: 12px;
+    width: 160px;
+    height: 44px;
+    border-bottom: 1px solid  #3F4449;
+    line-height: 44px;
+    position: relative;
+}
+
+#nav>.nav-wrapper .r-list li.subParent .sub-nav2>li::after{
+    content: "0";
+    position: absolute;
+    right: 15px;
+    line-height: 44px;
+    display: block;
+    top: 0;
+    text-align: center;
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+}
+
+#nav>.nav-wrapper .r-list li.subParent .sub-nav2>li:hover,
+#nav>.nav-wrapper .r-list li.userCenter>ul>li:hover
+{
+    background: #2E353D;
+    cursor: pointer;
+}
+
+
+#nav>.nav-wrapper .r-list li.subParent .sub-nav1 li{
+    text-align: center;
+    color: #CCCCCC;
+    font-size: 14px;
+}
+
+
+#nav>.nav-wrapper .r-list li.subParent .sub-nav1 .slidegoods{
+    height: 65px;
+    width: 290px;
+    padding:15px 15px;
+}
+
+#nav>.nav-wrapper .r-list li.subParent .sub-nav1 li:first-child{
+    background: #292F34;
+    width: 100%;
+    height: 70px;
+}
+
+#nav>.nav-wrapper .r-list li.subParent .sub-nav1 li:last-child{
+    background: #7DBFDE;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+}
+
+#nav>.nav-wrapper .r-list li.subParent .sub-nav1 li:last-child:hover{
+    background: #96C8E0;
+}
+
+#nav>.nav-wrapper .r-list li.subParent:hover .sub-nav1,
+#nav>.nav-wrapper .r-list li.subParent:hover .sub-nav2
+{
+    display: block;
+}
+
+
+#r-fixed{
+    position:fixed;
+    width:143px;
+    right:0px;
+    top:110px;
+    z-index:3;
+
+}
+
+#r-fixed div.turnOff{
+    width:15px;
+    height:15px;
+    position:absolute;
+    right:18px;
+    top:18px;
+    background:transparent;
+    z-index:3;
+    cursor:pointer;
+}
+
+#r-fixed img{
+    width:143px;
+}
+
+#content{
+    width: 100%;
+    position: relative;
+}
+
+#content .wrapper-content{
+    width:1000px;
+    margin:0 auto;
+    position: relative;
+}
+
+#content .wrapper-content .subNav{
+    width: 100%;
+    height: 45px;
+    border-bottom: 4px solid #EDEDED;
+    z-index:4;
+    position: relative;
+    background: #fff;
+}
+
+#content .wrapper-content .subNav div.fdj{
+    float:left;
+    width:226px;
+    height:49px;
+    position:relative;
+}
+
+#content .wrapper-content .subNav div.fdj a{
+    display:block;
+    width:46px;
+    height:40px;
+    right:0px;
+    position:absolute;
+    cursor: pointer;
+    background:url("../良仓.生活美学平台_files/icon.png") no-repeat;
+    background-position: -166px -144px;
+}
+
+#content .wrapper-content .subNav div.fdj div.wrap_fdj{
+    height:45px;
+    width:0px;
+    border-bottom:4px solid #25292e;
+    position:absolute;
+    left:226px;
+    opacity:0;
+}
+
+#content .wrapper-content .subNav div.fdj div.wrap_fdj input{
+    width:192px;
+    height:30px;
+    margin:7px 0;
+    border:none;
+    outline:none;
+}
+
+
+
+#content .wrapper-content .subNav ul{
+    position:relative;
+    float: left;
+}
+#content .wrapper-content .subNav>ul>li{
+    width: 164px;
+    height: 49px;
+    float: left;
+    line-height: 49px;
+
+}
+
+
+#content .wrapper-content .subNav>ul>li>div.li-child{
+    padding:31px 0 40px 0;
+    width: 1000px;
+    left: 0;
+    height: auto;
+    position: absolute;
+    z-index: 5;
+    background: #fff;
+    overflow: hidden;
+    display: none;
+
+}
+
+#content .wrapper-content .subNav>ul>li>div.li-child a{
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+    margin-right: 60px;
+    line-height: 32px;
+    display: inline-block;
+}
+
+#content .wrapper-content .subNav>ul>li>div.li-child a:hover{
+    background: #98B5D5;
+    color:#fff;
+}
+
+#nav .headerNaive{
+    position: relative;
+    top:56px;
+    left:0px;
+    width: 100%;
+    background: #fff;
+    z-index: 3;
+    height: 0px;
+}
+/*hover出来的同时下拉框出来 */
+
+#content .wrapper-content .subNav>ul>li>a{
+    color: #333;
+    display: block;
+    width: 121px;
+    height: 45px;
+    border-bottom: 4px solid transparent;
+    text-align: center;
+    font-size:15px;
+}
+
+
+#content .wrapper-content .subNav ul li:first-child{
+    width:118px;
+}
+#content .wrapper-content .subNav ul>li:first-child>a:first-child{
+    text-align: left;
+    width:100%;
+}
+
+#content .wrapper-content  .subNav ul li:hover>a{
+    border-bottom: 4px solid #25292E;
+}
+
+
+#content .wrapper-content .subNav>ul>li:hover .li-child{
+    display: block;
+}
+
+
+
+/* 页尾*/
+
+#liangcangShop{
+    width: 100%;
+    margin-top: 90px;
+    height:118px;
+    border-top:1px solid #EDEDED;
+    padding:51px  0 78px 0;
+    position:relative;
+}
+
+#liangcangShop div.liangcangShop-center{
+    width:1000px;
+    height:100%;
+    left:50%;
+    margin-left:-500px;
+    position:relative;
+}
+
+#liangcangShop div.liangcangShop-center h3{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 45px;
+    width: 177px;
+    height: 16px;
+    background: url("../良仓.生活美学平台_files/icon.png") no-repeat 45px -417px;
+}
+
+
+#liangcangShop div.liangcangShop-center h3 div.littleFinger{
+    width:27px;
+    height:100%;
+    background:url("../良仓.生活美学平台_files/icon.png") no-repeat -173px -356px;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+#liangcangShop div.liangcangShop-center div.provide{
+    width:100%;
+    height:60px;
+    padding-top:42px;
+}
+
+#liangcangShop div.liangcangShop-center div.provide .provide-block{
+    float:left;
+    height:100%;
+    overflow:hidden;
+    width:250px;
+}
+
+#liangcangShop div.liangcangShop-center div.provide .provide-block>div.img{
+    width:56px;
+    height:60px;
+    float:left;
+    background-image:url("../良仓.生活美学平台_files/icon.png");
+    background-repeat:no-repeat;
+    background-size:center;
+}
+
+#liangcangShop div.liangcangShop-center div.provide .provide-block>div.describe{
+    float:left;
+    height:51px;
+    padding:9px 0 0 20px;
+}
+
+#liangcangShop div.liangcangShop-center div.provide .provide-block>div.describe p{
+    line-height:24px;
+    font-size:14px;
+    color:#737373;
+}
+
+#liangcangShop div.liangcangShop-center div.provide .provide-block>div.describe p:last-child{
+    font-size: 12px;
+    color:#CCCCCC;
+}
+
+
+
+#liangcangShop div.liangcangShop-center div.provide .provide-block>div.img1{
+    background-position:0 -355px;
+}
+
+#liangcangShop div.liangcangShop-center div.provide .provide-block>div.img2{
+    background-position:-153px -217px;
+}
+
+#liangcangShop div.liangcangShop-center div.provide .provide-block>div.img3{
+    background-position:-57px -353px;
+}
+
+#liangcangShop div.liangcangShop-center div.provide .provide-block>div.img4{
+    background-position:-114px -353px;
+}
+
+#footer{
+    width:100%;
+    height:223px;
+    position:relative;
+    background:#25292E;
+}
+
+#footer .wrapper-footer{
+    width:1000px;
+    padding-top:40px;
+    height:183px;
+    left:50%;
+    margin-left:-500px;
+    position:absolute;
+}
+
+#footer .wrapper-footer div.title{
+    width:100%;
+    height:44px;
+}
+
+#footer .wrapper-footer div.title .phone{
+    width:136px;
+    height:44px;
+    float:left;
+    padding-left:60px;
+    background:url("../良仓.生活美学平台_files/icon.png") no-repeat -175px 0;
+}
+
+#footer .wrapper-footer div.title .phone a.pc{
+    display:block;
+}
+
+#footer .wrapper-footer div.title .phone a{
+     color:#5C5C5C;
+     font-size:16px;
+     line-height:22px;
+     letter-spacing:2px;
+     margin-right:10px;
+     font-size:14px;
+}
+
+#footer .wrapper-footer div.title .friend{
+    height:100%;
+    float:right;
+}
+
+#footer .wrapper-footer div.title .friend a{
+    display:block;
+    background-image:url("../良仓.生活美学平台_files/icon.png");
+    background-repeat:no-repeat;
+    float:left;
+    margin:12px 0 12px 27px;
+    background-size:center;
+    height:20px;
+    position:relative;
+    opacity:0.2;
+}
+
+
+#footer .wrapper-footer div.title .friend a:hover{
+    transition:.5s ease-in-out;
+}
+
+#footer .wrapper-footer div.title .friend a.wb{
+    background-position:-100px -23px;
+    width:26px
+}
+
+#footer .wrapper-footer div.title .friend div.wrap_code{
+    width:145px;
+    height:194px;
+    top:-198px;
+    left:-60px;
+    position:absolute;
+    display:none;
+}
+
+#footer .wrapper-footer div.title .friend div.wx_code{
+    width:145px;
+    height:145px;
+    background:url("../良仓.生活美学平台_files/icon.png") no-repeat 0px -148px;
+}
+
+#footer .wrapper-footer div.title .friend a.wx{
+    background-position:-150px -23px;
+    width:23px;
+}
+
+#footer .wrapper-footer div.title .friend a.db{
+    background-position:-129px -25px;
+    width:18px;
+}
+
+
+#footer .wrapper-footer div.about-us{
+    margin-top:29px;
+    overflow:hidden;
+}
+#footer .wrapper-footer div.about-us a{
+    color:#5C5C5C;
+    padding:0 8px 0 10px;
+    float:left;
+    font-size:14px;
+    display:block;
+    border-right:1px solid  #45474A;
+    margin-bottom:9px;
+}
+
+#footer .wrapper-footer div.about-us a:first-child{
+    padding-left:0px;
+}
+
+#footer .wrapper-footer div.about-us p{
+    font-size:14px;
+    color:#5C5C5C;
+    padding-left:14px;
+    line-height:17px;
+    clear:both;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+#footer .wrapper-footer div.about-us .fir-line{
+    padding-left:0px;
+}
+
+
+
+/* 展示商品样式*/
+#content div.popular{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 80px;
+    margin-top:23px;
+    clear: both;
+}
+
+#content div.popular>div{
+    float: left;
+    margin-bottom: 30px;
+    position:relative;
+}
+
+#content div.popular>div.center{
+    margin: 0 26px;
+}
+
+#content div.popular>div a{
+    display: block;
+    color: #878787;
+    font-size: 14px;
+    position:relative;
+
+}
+
+#content div.popular>div a.pic>div.masking{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:286px;
+    height:286px;
+    padding:15px;
+    background:rgba(0,0,0,.7);
+    display:none;
+}
+
+#content div.popular>div a.pic:hover .masking{
+    display:block;
+}
+
+
+#content div.popular>div a.pic>div.masking .price{
+    color:#0C6EBA;
+    font-size:20px;
+    font-style:italic;
+    font-weight:bold;
+    margin:5px;
+}
+
+
+#content div.popular>div a.pic>div.masking .items{
+    margin-top:80px;
+    text-align:center;
+}
+
+#content div.popular>div a.pic>div.masking .items h4{
+    font-size:14px;
+    line-height:25px;
+    color:#fff;
+    height:25px;
+    padding:0 20px;
+    overflow:hidden;
+    font-weight:600;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+
+#content div.popular>div a.pic>div.masking .items p{
+    font-size:12px;
+    color:#fff;
+    padding:0 20px;
+    margin-top:15px;
+    line-height:20px;   
+}
+
+
+#content div.popular div a.pic img{
+    width: 100%;
+    height: 100%;
+}
+
+#content div.popular div a.brand img{
+    width: 34px;
+    height: 34px;
+    padding: 0 6px 6px 0;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#content div.popular div a.pic{
+    width: 316px;
+    height: 316px;
+}
+
+
+
+#content div.popular div a.brand{
+    width: 216px;
+    height: 40px;
+    float: left;
+    font-size:14px;
+    margin-top:10px;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;;
+}
+
+#content div.popular div a.favor{
+    margin-top:10px;
+    float: right;
+    padding-right: 30px;
+    height: 40px;
+    line-height: 40px;
+    background: url("../良仓.生活美学平台_files/favor.png") no-repeat right;
+}
+
+

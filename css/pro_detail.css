@@ -1,0 +1,71 @@
+#content div.wrapper-content>p{
+    font-size: 32px;
+    text-align: center;
+    line-height: 32px;
+    margin: 120px 0;
+}
+
+
+#content div.paging-box a.prev,
+#content div.paging-box a.next
+{
+    padding:0px;
+    margin:0 5px;
+}
+
+#content div.paging-box a.next{
+    width: 62px;
+    height: 20px;
+    background: url("../良仓.生活美学平台_files/icon.png") -23px -598px no-repeat;
+}
+
+#content div.paging-box a.prev{
+    width: 61px;
+    height: 19px;
+}
+
+
+
+
+#content div.paging-box a,#content div.paging-box span{
+    padding: 0 5px;
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    text-align: center;
+    color: #878787; 
+}
+
+
+#content div.paging-box a{
+    color: #878787; 
+}
+
+#content div.paging-box .jump-btn{
+    background: url("../良仓.生活美学平台_files/icon.png") -85px -581px no-repeat;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    width:41px;
+    height: 19px;
+    margin:0 5px;
+}
+
+#content div.paging-box span{
+    color:#fff;
+    background-color: #98B5D5;
+}
+
+
+#content div.wrap-paging{
+    position: relative;
+    overflow: hidden;
+}
+
+#content div.paging-box{
+    float: right
+}
+
+#content div.paging-box .jump-ipt{
+    width: 26px;
+}

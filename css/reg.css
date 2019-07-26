@@ -1,0 +1,215 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    height: 754px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.register{
+    width:100%;
+    height:754px;
+    background:#999999;
+    position:relative;
+}
+
+.register .wrapper{
+    width:1000px;
+    height:750px;
+    margin-left:-500px;
+    left:50%;
+    position:absolute;
+}
+
+.register .wrapper .main{
+    width:100%;
+    height:650px;
+    padding-top:100px;
+}
+
+
+.register .wrapper .main form{
+    margin:0 auto;
+    width:640px;
+    height:600px;
+    padding:0 0px 0 0px;
+}
+
+.register .wrapper .main form>div{
+    width:580px;
+    height:50px;
+    overflow:hidden;
+    margin:10px 0;
+    padding:0 0 0 60px;
+    /* padding:0 50px; */
+}
+
+.register .wrapper .main form a.title{
+    height:105px;
+    display:block;
+    padding:30px 0;
+}
+
+.register .wrapper .main form a.title img{
+    margin:0 auto;
+    display:block;
+}
+
+.register .wrapper .main form div input{
+    width:300px;
+    padding:0px;
+    padding-left:20px;
+    height:100%;
+    border:none;
+    background:#CCCCCC;
+    float:left;
+}
+
+.register .wrapper .main form div label{
+    padding-right:20px;
+    width:56px;
+    height:50px;
+    float:left;
+    line-height:56px;
+    color:#fff;
+    font-weight:600;
+    font-size:14px;
+    margin-right:10px;
+}
+
+.register .wrapper .main form div.code input{
+    width:225px;
+}
+
+
+input::-webkit-input-placeholder{
+    font-size:14px;
+    color:#fff;
+    font-weight:600;
+}
+
+
+.register .wrapper .main form div input.radio{
+    width:13px;
+    height:13px;
+    padding:0px;
+    margin-left:86px;
+    float:left;
+}
+.register .wrapper .main form div.agree-1{
+    padding:10px 0 0 0;
+    height:27px;
+}
+
+.register .wrapper .main form div label.agree{
+    float:left;
+    padding:0px;
+    margin:0px;
+    height:13px;
+    width:110px;
+    line-height:18px;
+    font-size:12px;
+}
+
+.register .wrapper .main form div button{
+    margin-left:86px;
+    background:#25292E;
+    width:300px;
+    height:50px;
+    color:#fff;
+    border:none;
+    font-weight:bolder;
+    font-size:18px;
+    text-align:center;
+    cursor: pointer;
+}
+
+.register .wrapper .main form div.createPwd div{
+    float: left;
+    height: 100%;
+    width: auto;
+    margin: 0px 0px 2px 5px;
+}
+
+.register .wrapper .main form div.createPwd div span{
+    display: inline-block;
+    width:50px;
+    height:14px;
+    margin:18px 0px;
+    line-height: 14px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    display: none;
+    border-radius: 20px;
+}
+
+
+.register .wrapper .main form div.phone span.tips1{
+    width: 18px;
+    height: 18px;
+    line-height: 50px;
+    display: inline-block;
+    margin-left: 10px;
+    background-size: 18px;
+    position: relative;
+    left: 0px;
+    top:17px;    
+}
+
+.register .wrapper .main form div.createPwd div span.feeble{background:orange}
+.register .wrapper .main form div.createPwd div span.medium{background:skyblue}
+.register .wrapper .main form div.createPwd div span.strong{background:greenyellow}
+
+div#Mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index:3;
+    display:none;
+}
+
+div#Mask .dialog{
+    width: 620px;
+    height: 350px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin:-170px 0 0 -310px;
+    background: #fff;
+}
+
+div#Mask .dialog div.title{
+    background: skyblue;
+    font-size: 24px;
+    height: 35px;
+    font-weight: 500;
+    line-height: 35px;
+    color: #fff;
+    padding: 0 15px;
+}
+
+div#Mask .dialog div.content{
+    height: 315px;
+}
+
+div#Mask .dialog div.content p{
+    margin:100px;
+    text-align: center;
+}
+
+div#Mask .dialog div.content button{
+    background-color: skyblue;
+    border: none;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    position: absolute;;
+    left: 50%;
+    top: 80%;
+    margin-left: -50px;
+}

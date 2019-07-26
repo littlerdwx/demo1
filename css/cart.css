@@ -1,0 +1,255 @@
+
+.detail-cart{
+    width:100%;
+}
+
+
+.detail-cart>ul{
+    width:100%;
+    padding:50px 0 10px 0;
+}
+
+.detail-cart ul div.wrap-li{
+    width:300px;
+    height:20px;
+    margin:0 auto;
+}
+
+.detail-cart ul div.wrap-li li{
+    float:left;
+    width:135px;
+    height:20px;
+    line-height:20px;
+    border-left:1px solid #333;
+    border-right:1px solid #333;
+    text-align:Center;
+    font-size:14px;
+    color: #6393b4;
+}
+
+.detail-cart ul div.wrap-li li:last-child{
+    border-left:0px;
+    color:#000;
+}
+
+.detail-cart div.empty{
+    width:640px;
+    height:280px;
+    margin:96px 180px 0;
+    box-shadow: rgb(170, 170, 170) 2px 1px 2px;
+    position:relative;
+}
+
+
+.detail-cart div.empty span{
+    height: 24px;
+    font-size: 24px;
+    color: #999999;
+    line-height: 24px;
+    text-align: center;
+    width: 300px;
+    margin: 15px 0 0 170px;
+    display:block;
+    position:absolute;
+}
+
+.detail-cart div.empty  img{
+    width:150px;
+    height:110px;
+    margin-top: 40px;
+    margin-left: 245px;
+}
+
+.detail-cart div.dante{
+    width:100%;
+    height:142px;
+    padding:20px 0;
+}
+
+.detail-cart div.dante div{
+    text-align:center; 
+    width:100%; 
+    font-size: 14px;
+    line-height: 30px;
+    overflow:hidden;
+}
+
+.detail-cart div.dante div.total_price span{
+    font-size: 24px;
+    color: #6393b4;
+}
+
+.detail-cart div.dante div.checkOut span{
+    margin:5px 416px 0 416px;
+    float:left;
+    background: #7fa6c5;
+    width: 168px;
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.detail-cart div.dante div.checkOut span:hover{
+    background-color: #40A4E6;
+}
+
+
+.detail-cart div.dante>div:last-child fieldset{
+    width:60px;
+    height:18px;
+    padding:0 54px;
+    margin-top:15px;
+    font-size:12px;
+    float:left;
+    border-top: 1px solid #ccc;
+    margin: 15px 416px 0 416px;  
+}
+
+.detail-cart div.dante>div:last-child fieldset legend{
+    height:19px;
+}
+
+
+.detail-cart div.dante>div:last-child fieldset a{
+    display:block;
+    height:19px;
+    width:56px;
+    line-height:19px;
+    color: #404040;
+    font-size:14px;
+}
+
+input{
+    margin:0px;
+}
+
+div.Cart_list{
+    margin-top: 50px;
+}
+
+div.cart-head>ul,
+div.addItemInCart ul{
+    overflow: hidden;
+}
+div.cart-head>ul>li,
+div.addItemInCart ul>li
+{
+    float: left;
+    padding:15px 5px;
+    border-bottom: 2px solid #ccc;
+    font-size: 14px;
+    width: 140px;
+    text-align: center;
+    position: relative;
+}
+
+div.cart-head>ul>li.desc{
+    width: 240px;
+}
+
+div.addItemInCart{
+    height: 100px;;
+}
+
+div.addItemInCart ul>li{
+    font-size: 14px;
+    height: 100px;
+    padding:0px 5px;
+    line-height: 100px;
+    border-bottom: 1px solid #ccc;
+}
+
+div.addItemInCart ul>li.desc{
+    width: 240px;
+
+}
+
+div.addItemInCart ul>li.product_img-check,
+div.addItemInCart ul>li.desc p
+{
+    text-align: left;   
+}
+
+div.addItemInCart ul>li.desc p{
+    font-size: 14px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 16px;
+    height: 40px;
+    padding:30px 0;
+    color: #878787;
+}
+
+div.addItemInCart ul>li.add-reduce{
+    line-height: 16px;
+    position: relative;
+}
+div.addItemInCart ul>li.add-reduce input.Quantity{
+    width: 38px;
+    height: 15px;
+    border: 1px solid #F0F0F0;
+    padding:4px 0;
+    position: relative;
+    font-size: 14px;
+    top:42px;
+    text-align: center;
+}
+
+
+div.addItemInCart ul>li.add-reduce>span{
+    width: 17px;
+    height: 23px;
+    border:1px solid #e5e5e5;
+    background: #f0f0f0;
+    text-align: center;
+    position: absolute;
+    display: block;
+    top:42px;
+    color: #444;
+    line-height: 23px;
+}
+
+div.addItemInCart ul>li.add-reduce span.add{
+    right: 36px;
+}
+
+div.addItemInCart ul>li.add-reduce span.reduce{
+    left:36px;
+}
+
+div.addItemInCart ul>li.add-reduce span.add,
+div.addItemInCart ul>li.add-reduce span.reduce,
+div.addItemInCart ul>li.delete span:hover
+{
+    cursor: pointer;
+}
+
+div.addItemInCart ul>li.delete span{
+    color: #7FA6C5;
+}
+
+
+div.addItemInCart ul>li.product_img-check img{
+    width: 70px;
+    height: 70px;
+    padding:16px 0;
+    margin-left: 40px;
+}
+
+div.addItemInCart ul>li.product_img-check input[type="checkBox"]{
+    position: absolute;
+    top:44px;
+}
+
+div.cart-head .head-list>li input.checkAll{
+    position: absolute;
+    top:16px;
+    left:6px;
+}
+
+div.addItemInCart ul>li.add-reduce>span:hover{
+    color: #FF6600;
+    border-color: #FF6600;
+}

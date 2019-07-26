@@ -1,0 +1,70 @@
+body{
+   position: relative;
+}
+#mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    z-index:5;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+#dialog{
+    width: 433px;
+    height: 210px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin-top:-105px;
+    margin-left:-216px; 
+}
+
+#dialog p{
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    line-height:176px; 
+}
+
+div.dialogHead{
+    width:100%;
+    height: 34px;
+    background: url("../icon/dialog.png") no-repeat 0px 0px;
+}
+
+div.dialogContent{
+    width:100%;
+    height: 176px;
+    background-color: #F1F2F7;
+    position: relative;
+}
+
+.ok,
+.cancel
+{
+    background-color: #333;
+    color: #fff;
+    width: 60px;
+    height: 24px;
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 20px;
+}
+
+.ok,
+.cancel:hover{
+    cursor: pointer;
+}
+
+.ok{
+    left:126px;
+}
+
+.cancel{
+    right: 126px;
+}
